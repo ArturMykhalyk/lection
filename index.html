@@ -51,12 +51,51 @@
             </svg>
           </a>
         </address>
+
+        <button class="nav-button" type="button" data-menu-open>
+          <svg class="nav-icon" width="28" height="28">
+            <use href="./images/icons/icons.svg#icon-nav-btn-1"></use>
+          </svg>
+        </button>
+      </div>
+      <!-- mobile menu -->
+      <div class="mobile-menu" data-menu>
+        <div class="container mobile-menu-conteiner">
+          <button class="mobile-menu-close" data-menu-close>
+            <svg class="iconbtn" width="14" height="14">
+              <use href="./images/icons/icons.svg#icon-close"></use>
+            </svg>
+          </button>
+          <nav class="mobile-nav-container">
+            <ul class="mobile-nav-menu">
+              <li><a class="mobile-nav-link orange" href="">Home</a></li>
+              <li>
+                <a class="mobile-nav-link" href="#made">How it’s made?</a>
+              </li>
+              <li>
+                <a class="mobile-nav-link" href="#loved">Chocolate is loved</a>
+              </li>
+            </ul>
+          </nav>
+          <address class="mobile-social-icon">
+            <a href="#!">
+              <svg class="mobile-icon" width="24" height="24">
+                <use href="./images/icons/icons.svg#icon-instagram-2"></use>
+              </svg>
+            </a>
+            <a href="#!">
+              <svg class="mobile-icon" width="24" height="24">
+                <use href="./images/icons/icons.svg#icon-twitter"></use>
+              </svg>
+            </a>
+          </address>
+        </div>
       </div>
       <!-- nav>a+ul>li*3>a -->
     </header>
     <main>
       <section class="hero">
-        <div class="container">
+        <div class="container hero">
           <h1 class="hero-title">
             Treat yourself or a loved one to our finest ingredients for a moment
             of pure delight!
@@ -111,7 +150,7 @@
                 in affordable luxury today.
               </p>
             </li>
-            <li>
+            <li class="features-list-element">
               <div class="border-features-icon">
                 <svg class="features-icon" width="32" height="32">
                   <use href="./images/icons/icons.svg#icon-spoon"></use>
@@ -346,6 +385,44 @@
               </p>
             </li>
           </ul>
+          <!-- radio   -->
+          <div class="radio-btn-loved">
+            <div class="radio-btn">
+              <label>
+                <input
+                  type="radio"
+                  name="user-loved"
+                  value="0"
+                  class="real-radio"
+                  checked
+                />
+                <span class="cucton-radio"></span>
+              </label>
+            </div>
+            <div class="radio-btn">
+              <label>
+                <input
+                  type="radio"
+                  name="user-loved"
+                  value="1"
+                  class="real-radio"
+                />
+                <span class="cucton-radio"></span>
+              </label>
+            </div>
+            <div class="radio-btn">
+              <label>
+                <input
+                  type="radio"
+                  name="user-loved"
+                  value="2"
+                  class="real-radio"
+                />
+                <span class="cucton-radio"></span>
+              </label>
+            </div>
+          </div>
+
           <button class="loved-btn" type="button" data-modal-open>
             Leave a review
           </button>
@@ -403,7 +480,7 @@
 
     <!-- form -->
 
-    <div class="modal-overlay" data-modal>
+    <div class="modal-overlay hidden" data-modal>
       <div class="modal">
         <button class="close-btn" type="button" data-modal-close>
           <svg class="iconbtn" width="14" height="14">
